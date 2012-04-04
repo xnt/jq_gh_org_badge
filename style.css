@@ -1,0 +1,16 @@
+#target{
+	border-width: thin medium medium thin;
+	border-color: gray;
+	border-style: solid;
+	display: inline-block;
+	padding: 10px;
+	width: 200px;
+}
+#target span {
+	font-weight: bold;
+	font-family: Arial, Helvetica;
+}
+.slider    { overflow:hidden; position:relative; }
+.slider ul { margin:0; padding:0; }
+.slider li { float:left; margin:0 5px 0 0; list-style:none; }
+.slider ul { width:100%; }
