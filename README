@@ -2,6 +2,8 @@ Simple Badge for a GitHub organization using the GitHub JSONP API via jQuery, an
 
 I'm using Nearsoft 'cause Nearsoft rocks and that stuff. Change to fit your needs accordingly.
 
+NEW! Demo here: http://xnt.github.com/orgBadgeDemo.html
+
 Settings:
 
 target Where to put the badge. By default, the element from where you call the plugin
