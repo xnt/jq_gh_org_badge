@@ -2,4 +2,11 @@ Simple Badge for a GitHub organization using the GitHub JSONP API via jQuery, an
 
 I'm using Nearsoft 'cause Nearsoft rocks and that stuff. Change to fit your needs accordingly.
 
-Hope I can turn it into a jQuery plugin soon.
+Settings:
+
+target Where to put the badge. By default, the element from where you call the plugin
+users Should I display the users? Default: true, // Requires Lemmon Slider!!!
+repos Display number of public repos? Default: true,
+gists Display number of public gists? Default: true,
+organization Organization name (eg http://github.com/[useThisThing]) Default: 'nearsoft',
+imgWidth Organization image width. Default: '50px'

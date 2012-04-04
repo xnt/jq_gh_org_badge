@@ -45,7 +45,7 @@
 									+ "<a href='#' class='next-slide'>&gt;</a> | "
 									+ "<a href='#' class='next-page'>&raquo;</a>"
 									+ "</div>";
-								$("#target").html(orgInfo);
+								$(target).html(orgInfo);
 								$('#slider1').lemmonSlider();
 							}
 						});

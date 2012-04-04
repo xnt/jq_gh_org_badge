@@ -1,16 +1,22 @@
 <html>
 <head>
-<title>GitHub org test</title>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js">
+<title>JQ GH Org Badge demo</title>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery.min.js">
+	
 </script>
-<script type="text/javascript" src="https://raw.github.com/lemmon/Lemmon-Slider/master/lemmon-slider.js">
+<script type="text/javascript"
+	src="https://raw.github.com/lemmon/Lemmon-Slider/master/lemmon-slider.js">
+	
 </script>
-<script type="text/javascript" src="jq_gh_org_badge.js">
+<script type="text/javascript" src="jq_gh_org_badge.plugin.js">
 </script>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<span id="target">
-</span>
+	<span id="target"> </span>
+	<script type="text/javascript">
+		$("#target").ghOrgBadge();
+	</script>
 </body>
 </html>
