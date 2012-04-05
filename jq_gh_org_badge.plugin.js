@@ -14,7 +14,7 @@
 	            url : 'https://api.github.com/orgs/' + settings.organization,
 	            success : function(response) {
 	                var data = response.data;
-	                var orgInfo = $("<a>").attr({ target: "_blank", href: "data.html_url" } )
+	                var orgInfo = $("<a>").attr({ target: "_blank", href: data.html_url } )
 	                    .appendTo(target);
 	                orgInfo.append($("<img>").attr({width: 50, src: data.avatar_url }));
 	                $("<span>").html(data.name).appendTo(target);
