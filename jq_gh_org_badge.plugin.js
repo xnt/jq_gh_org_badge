@@ -16,7 +16,7 @@
 	                var data = response.data;
 	                var orgInfo = $("<a>").attr("target", "_blank").attr("href", data.html_url)
 	                    .appendTo(target);
-	                orgInfo.append($("<img />").attr("width", settings.width).attr("src", data.avatar_url));
+	                orgInfo.append($("<img>").attr("width", settings.width).attr("src", data.avatar_url));
 	                $("<span>").html(data.name).appendTo(target);
 	                $("<p>").html("@GitHub:"
 	                        + (settings.repos ? data.public_repos + " repos; "  : "")
@@ -28,21 +28,21 @@
 	                        url : 'https://api.github.com/orgs/' + settings.organization + '/members',
 	                        success : function(membersResponse) {
 	                            function createControl(cssClass, innerhtml){
-	                                return $("<a />").attr("href", "#").addClass(cssClass).html(innerhtml)
+	                                return $("<a>").attr("href", "#").addClass(cssClass).html(innerhtml)
 	                                    .after("&nbsp;|&nbsp;");
 	                            }
-	                            var ul = $("<ul />").appendTo(
-	                                $("<div />").addClass("slider").attr("id", "slider1").appendTo(target)
+	                            var ul = $("<ul>").appendTo(
+	                                $("<div>").addClass("slider").attr("id", "slider1").appendTo(target)
 	                            );
 	                            var mrData = membersResponse.data;
 	                            $.each(mrData,function(i, member) {
-	                                $("<li >").append($("<a />").attr("target", "_blank").
+	                                $("<li>").append($("<a>").attr("target", "_blank").
 	                                        attr("href", "http://github.com/" + member.login)
-	                                        .append($("<img />").attr("width", "40px").attr("src", member.avatar_url)
+	                                        .append($("<img>").attr("width", "40px").attr("src", member.avatar_url)
 	                                                .attr("title", member.login)
 	                                        ).after("&nbsp;")).appendTo(ul);
 	                            });
-	                            $("<div />").addClass("controls").append("|&nbsp;")
+	                            $("<div>").addClass("controls").append("|&nbsp;")
 	                            .append(createControl("prev-page", "&laquo;"))
 	                            .append(createControl("prev-slide", "&lt;"))
 	                            .append(createControl("next-slide", "&gt;"))
