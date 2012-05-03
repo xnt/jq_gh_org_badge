@@ -1,7 +1,7 @@
 (function($) {
     $.fn.ghOrgBadge = function(options) {
 	    var settings = $.extend({
-		    target : this,
+		    target : $(this),
 		    users : true, // Requires Lemmon Slider!!!
 		    repos : true,
 		    gists : true,
